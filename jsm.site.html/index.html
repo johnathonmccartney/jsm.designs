@@ -135,6 +135,7 @@
       box-shadow: 0 18px 40px rgba(0,0,0,0.09);
     }
     .about h3 { font-size: 1.75rem; margin-bottom: 1rem; color: var(--navy); }
+    .about-section { background: var(--gray); }
     .linkedin {
       display: inline-block;
       margin-top: 1.4rem;
@@ -159,7 +160,6 @@
     .card:hover { transform: translateY(-6px); box-shadow: 0 12px 28px rgba(0,168,232,0.1); }
     .card h3 { margin-bottom: 0.7rem; color: var(--navy); }
 
-    .testimonials { background: var(--gray); }
     .testimonial-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -258,11 +258,11 @@
 <body>
 
 <nav>
-  <a href="#" class="logo" aria-label="JSM.DESIGNS home"><img src="jsm_designs_nav.png" alt="JSM.DESIGNS" width="800" height="211"></a>
+  <a href="#" class="logo" aria-label="JSM.DESIGNS home"><img src="jsm_designs_nav.png" alt="JSM.DESIGNS" width="800" height="175"></a>
   <button class="nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
   <div class="nav-links" id="nav-links">
+    <a href="#services">Services</a>
     <a href="#about">About</a>
-    <a href="#work">Work</a>
     <a href="#testimonials">Testimonials</a>
     <a href="#contact">Contact</a>
   </div>
@@ -276,19 +276,7 @@
   </div>
 </section>
 
-<section id="about">
-  <div class="container about">
-    <img src="johnathon.jpg" alt="Johnathon McCartney" class="dissolve">
-    <div class="bubble">
-      <h3>About Me</h3>
-      <p>I'm a University of Florida graduate living in Louisville. Over the years I've worked on projects across both the public and private sectors, which has given me a practical sense of what actually helps a business or organization online.</p>
-      <p style="margin-top: 1rem;">When I'm not building sites I stay active with fitness, spend time learning languages, and follow college sports. I like keeping things straightforward and collaborative so the process feels easy on your end.</p>
-      <a href="https://www.linkedin.com/in/johnathon-mccartney-4a6005241/" target="_blank" class="linkedin">Connect on LinkedIn</a>
-    </div>
-  </div>
-</section>
-
-<section id="work">
+<section id="services">
   <div class="container">
     <h2 class="slide-up">What You Get</h2>
     <div class="services">
@@ -308,7 +296,19 @@
   </div>
 </section>
 
-<section id="testimonials" class="testimonials">
+<section id="about" class="about-section">
+  <div class="container about">
+    <img src="johnathon.jpg" alt="Johnathon McCartney" class="dissolve">
+    <div class="bubble">
+      <h3>About Me</h3>
+      <p>I'm a University of Florida graduate living in Louisville. Over the years I've worked on projects across both the public and private sectors, which has given me a practical sense of what actually helps a business or organization online.</p>
+      <p style="margin-top: 1rem;">When I'm not building sites I stay active with fitness, spend time learning languages, and follow college sports. I like keeping things straightforward and collaborative so the process feels easy on your end.</p>
+      <a href="https://www.linkedin.com/in/johnathon-mccartney-4a6005241/" target="_blank" class="linkedin">Connect on LinkedIn</a>
+    </div>
+  </div>
+</section>
+
+<section id="testimonials">
   <div class="container">
     <h2 class="fade-in">Kind Words</h2>
     <div class="testimonial-grid">
@@ -342,7 +342,7 @@
 
 <footer>
   <div class="footer-inner">
-    <img src="jsm_designs_nav.png" alt="JSM.DESIGNS" width="800" height="211">
+    <img src="jsm_designs_nav.png" alt="JSM.DESIGNS" width="800" height="175">
     <a href="mailto:hello@jsmdesigns.co">hello@jsmdesigns.co</a>
   </div>
   <p class="footer-copy">&copy; <span id="year">2026</span> JSM.DESIGNS</p>

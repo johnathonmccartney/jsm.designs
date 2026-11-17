@@ -162,7 +162,8 @@
 
     .testimonial-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(300px, 560px));
+      justify-content: center;
       gap: 1.8rem;
     }
     .testimonial {
@@ -170,13 +171,24 @@
       padding: 2rem;
       border-radius: 20px;
       border: 1px solid #e2e8f0;
+      display: flex;
+      flex-direction: column;
     }
-    .testimonial p { font-style: italic; margin-bottom: 1.2rem; }
+    .testimonial p { font-style: italic; font-size: 1.05rem; line-height: 1.7; margin-bottom: 1.4rem; }
+    .testimonial-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      flex-wrap: wrap;
+      gap: 0.8rem 1rem;
+      margin-top: auto;
+      padding-top: 1.2rem;
+      border-top: 1px solid #eef2f6;
+    }
     .testimonial .name { font-weight: 600; color: var(--navy); }
     .testimonial .company { color: #64748b; font-size: 0.95rem; }
     .testimonial .visit {
       display: inline-block;
-      margin-top: 1rem;
       color: var(--blue-dark);
       font-weight: 600;
       text-decoration: none;
@@ -319,18 +331,27 @@
     <div class="testimonial-grid">
       <!-- Easy to copy this block for more testimonials -->
       <div class="testimonial dissolve">
-        <p>"Placeholder."</p>
-        <div class="name">Ian</div>
-        <div class="company">Apex Barber Company</div>
-        <a href="https://apexbarbercompany.com" target="_blank" rel="noopener" class="visit">Check out the site &rarr;</a>
+        <p>&ldquo;I was struggling to create a website for my barber shop. I wasted a lot of my time and didn&rsquo;t see any results. However, Johnathon was able to create my website in no time! He understood what I needed and made communication clear and efficient. Johnathon created the perfect website for my new business and saved me so much time and hardship!&rdquo;</p>
+        <div class="testimonial-footer">
+          <div>
+            <div class="name">Ian</div>
+            <div class="company">Apex Barber Company</div>
+          </div>
+          <a href="https://apexbarbercompany.com" target="_blank" rel="noopener" class="visit">Check out the site &rarr;</a>
+        </div>
       </div>
 
       <!-- Add more testimonials by copying the block above -->
       <!--
       <div class="testimonial dissolve">
-        <p>"Your quote here."</p>
-        <div class="name">Name</div>
-        <div class="company">Company</div>
+        <p>&ldquo;Your quote here.&rdquo;</p>
+        <div class="testimonial-footer">
+          <div>
+            <div class="name">Name</div>
+            <div class="company">Company</div>
+          </div>
+          <a href="https://example.com" target="_blank" rel="noopener" class="visit">Check out the site &rarr;</a>
+        </div>
       </div>
       -->
     </div>
